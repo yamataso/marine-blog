@@ -9,6 +9,7 @@ const navigation = [
   { name: "ジャンル４", href: "/" },
   { name: "ジャンル５", href: "/" },
   { name: "ジャンル6", href: "/" },
+  { name: "ジャンル７", href: "/" },
 ];
 const Home: NextPage = () => {
   return (
@@ -43,6 +44,11 @@ const Home: NextPage = () => {
           </div>
         </nav>
       </div>
+      <img
+        className="  bg-gradient-to-r md:bg-gradient-to-t  left-0  "
+        src="/220_M.jpg"
+        alt=""
+      />
     </div>
   );
 };
