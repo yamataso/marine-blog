@@ -58,7 +58,10 @@ const Home: NextPage<Props> = (props) => {
             return (
               <li key={content.id}>
                 <Link href={`/blog/${content.id}`}>
-                  <a className=" underline text-blue-800 hover:text-blue-400">
+                  <a
+                    href="/"
+                    className=" underline text-blue-800 hover:text-blue-400"
+                  >
                     {content.title}
                   </a>
                 </Link>

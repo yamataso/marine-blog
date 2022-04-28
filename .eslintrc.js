@@ -22,5 +22,6 @@ module.exports = {
   plugins: ["react", "jsx-a11y"],
   rules: {
     quotes: "error",
+    "react/prop-types": "off",
   },
 };
