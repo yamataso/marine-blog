@@ -4,18 +4,22 @@ import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Blog } from "..";
 import { client } from "../../libs/client";
+import { TypographyStylesProvider } from "@mantine/core";
+
 type Props = Blog & MicroCMSContentId & MicroCMSDate;
 const BlogId: NextPage<Props> = (props) => {
   return (
     <div>
-      <h1 className="text-4xl font-bold">{props.title}</h1>
+      <h1 className=" py-8 text-4xl font-bold">{props.title}</h1>
       <time dateTime={props.publishedAt} className="mt-2 block">
         {dayjs(props.publishedAt).format("YYYY年MM月DD日")}
       </time>
-      <article
-        className="prose-sm mt-8"
-        dangerouslySetInnerHTML={{ __html: props.body }}
-      />
+      <TypographyStylesProvider>
+        <article
+          className="prose-sm mt-8"
+          dangerouslySetInnerHTML={{ __html: props.body }}
+        />
+      </TypographyStylesProvider>
     </div>
   );
 };
