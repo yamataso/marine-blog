@@ -110,9 +110,7 @@ const Home: NextPage<Props> = (props) => {
               <img src="/reset.png" alt="リセット画像" width={24} height={24} />
             </button>
           </form>
-          <div className="min-w-max mt-4 ml-12 p-5 flex w-70 h-60 flex-col md:flex-row items-center border rounded-lg overflow-hidden">
-            <p>{props.category && `${props.category.name}`}</p>
-          </div>
+          <div className="min-w-max mt-4 ml-12 p-5 flex w-70 h-60 flex-col md:flex-row items-center border rounded-lg overflow-hidden"></div>
         </div>
       </div>
     </div>
