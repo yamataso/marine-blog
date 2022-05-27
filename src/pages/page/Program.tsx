@@ -1,3 +1,4 @@
+import React from "react";
 const Genre1 = () => {
   return (
     <div>
