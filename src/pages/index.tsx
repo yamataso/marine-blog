@@ -5,6 +5,8 @@ import { client } from "../libs/client";
 import { MicroCMSListResponse } from "microcms-js-sdk";
 import { ComponentProps } from "react";
 import { useState } from "react";
+import { ProfileJP } from "../../components/ProfileJP";
+import { ProfileYama } from "../../components/ProfileYama";
 
 export type Blog = {
   title: string;
@@ -55,7 +57,7 @@ const Home: NextPage<Props> = (props) => {
         <ul className="mt-4 space-y-4">
           {contents.map((content) => {
             return (
-              <li key={content.id} className="min-w-max pl-44">
+              <li key={content.id} className="min-w-max pl-24">
                 <Link href={`/blog/${content.id}`}>
                   <div className="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden p-3">
                     <img
@@ -87,6 +89,9 @@ const Home: NextPage<Props> = (props) => {
           })}
         </ul>
         <div className="mx-4">
+          <h1 className="ml-8 text-base text-gray-400 font-medium">
+            サイト内検索
+          </h1>
           <form className="text-right space-x-4" onSubmit={hundleSubmit}>
             <input
               type="text"
@@ -110,7 +115,12 @@ const Home: NextPage<Props> = (props) => {
               <img src="/reset.png" alt="リセット画像" width={24} height={24} />
             </button>
           </form>
-          <div className="min-w-max mt-4 ml-12 p-5 flex w-70 h-60 flex-col md:flex-row items-center border rounded-lg overflow-hidden"></div>
+          <div className="m-5 mt-4 ml-12 p-2 flex  w-76 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+            <ProfileJP />
+          </div>
+          <div className="m-5 mt-4 ml-12 p-2 flex  w-76 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+            <ProfileYama />
+          </div>
         </div>
       </div>
     </div>
