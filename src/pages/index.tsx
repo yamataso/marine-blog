@@ -11,6 +11,7 @@ import { ProfileYama } from "../../components/ProfileYama";
 export type Blog = {
   title: string;
   body: string;
+  tocvisible: boolean;
 };
 type Props = MicroCMSListResponse<Blog>;
 const Home: NextPage<Props> = (props) => {
@@ -33,7 +34,6 @@ const Home: NextPage<Props> = (props) => {
 
   const contents = search ? search.contents : props.contents;
   const totalCount = search ? search.totalCount : props.totalCount;
-
   return (
     <div>
       <div>
