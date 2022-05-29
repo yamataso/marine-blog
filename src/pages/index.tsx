@@ -11,7 +11,7 @@ import { ProfileYama } from "../../components/ProfileYama";
 export type Blog = {
   title: string;
   body: string;
-  tocvisible: boolean;
+  tocvisible: true;
 };
 type Props = MicroCMSListResponse<Blog>;
 const Home: NextPage<Props> = (props) => {

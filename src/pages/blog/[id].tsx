@@ -13,7 +13,6 @@ type Props = Blog & MicroCMSContentId & MicroCMSDate;
 
 const BlogId: NextPage<Props> = (props) => {
   const toc = renderToc(props.body);
-  console.log(toc);
 
   return (
     <div className="ml-40 pl-4 ">
