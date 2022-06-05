@@ -4,10 +4,10 @@ import { MicroCMSContentId, MicroCMSDate } from "microcms-js-sdk";
 import { GetStaticPaths, GetStaticProps, NextPage } from "next";
 import { Blog } from "..";
 import { client } from "../../libs/client";
-import { ProfileJP } from "../../../components/ProfileJP";
-import { ProfileYama } from "../../../components/ProfileYama";
+import { ProfileJP } from "../../components/ProfileJP";
+import { ProfileYama } from "../../components/ProfileYama";
 import { renderToc } from "../../libs/render-toc";
-import { TableOfContents } from "../../../components/TableOfContents";
+import { TableOfContents } from "../../components/TableOfContents";
 
 type Props = Blog & MicroCMSContentId & MicroCMSDate;
 
