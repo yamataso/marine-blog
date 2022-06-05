@@ -5,8 +5,8 @@ import { client } from "../libs/client";
 import { MicroCMSListResponse } from "microcms-js-sdk";
 import { ComponentProps } from "react";
 import { useState } from "react";
-import { ProfileJP } from "../components/ProfileJP";
-import { ProfileYama } from "../components/ProfileYama";
+import { ProfileJP } from "../../components/ProfileJP";
+import { ProfileYama } from "../../components/ProfileYama";
 
 export type Blog = {
   title: string;
