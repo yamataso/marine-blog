@@ -20,7 +20,11 @@ export const Header = () => {
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
                 >
                   プログラミング
-                  <img src="computer.png" alt="" className="m-1 pl-5  py-2" />
+                  <img
+                    src="computer.png"
+                    alt=""
+                    className="m-1 ml-8 pl-5  py-2"
+                  />
                 </a>
               </Link>
             </li>
@@ -33,7 +37,11 @@ export const Header = () => {
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs ml-2 "
                 >
                   健康
-                  <img src="hospital.png" alt="" className="m-1 pr-2   py-2" />
+                  <img
+                    src="hospital.png"
+                    alt=""
+                    className="m-1 ml-3 pr-2   py-2"
+                  />
                 </a>
               </Link>
             </li>
@@ -46,7 +54,7 @@ export const Header = () => {
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
                 >
                   自己啓発
-                  <img src="book.png" alt="" className="m-1 ml-4 pl-3 py-2" />
+                  <img src="book.png" alt="" className="m-1 ml-3 pl-3 py-2" />
                 </a>
               </Link>
             </li>
@@ -59,7 +67,7 @@ export const Header = () => {
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
                 >
                   お問い合わせ
-                  <img src="form.png" alt="" className="m-1 py-2 ml-4" />
+                  <img src="form.png" alt="" className="m-1 ml-10 py-2 " />
                 </a>
               </Link>
             </li>
