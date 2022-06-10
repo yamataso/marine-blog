@@ -60,7 +60,7 @@ const Home: NextPage<Props> = (props) => {
             return (
               <li key={content.id} className="sm:min-w-max  lg:pl-24">
                 <Link href={`/blog/${content.id}`}>
-                  <div className="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden m-4 p-3 md:max-w-3xl 2xl:max-w-full ">
+                  <div className="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden lg:m-4 lg:p-3 md:max-w-3xl 2xl:max-w-full ">
                     <img
                       src="/profile.png"
                       loading="lazy"
@@ -89,7 +89,7 @@ const Home: NextPage<Props> = (props) => {
           })}
         </ul>
         <div className="sm:mx-4">
-          <h1 className="sm:ml-8 text-base text-gray-400 font-medium">
+          <h1 className="sm:ml-8 text-base text-gray-400 font-medium text-right mr-60">
             サイト内検索
           </h1>
           <form className="sm:text-right space-x-4" onSubmit={hundleSubmit}>

@@ -2,7 +2,7 @@ import React from "react";
 
 export const TableOfContents = ({ toc }: any) => {
   return (
-    <div className=" bg-gray-100 rounded-xl w-8/12 block pb-4 pr-12">
+    <div className=" bg-gray-100 rounded-xl block pb-4  lg:w-8/12  sm:pr-12">
       <p className="text-xl font-sans font-semibold m-2 pt-8 pl-4 ">目次</p>
       <nav>
         <ul className="m-4 pl-4">

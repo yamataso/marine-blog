@@ -15,8 +15,8 @@ const BlogId: NextPage<Props> = (props) => {
   const toc = renderToc(props.body);
 
   return (
-    <div className="ml-40 pl-4 ">
-      <div className="min-w-max">
+    <div className="lg:ml-40 lg:pl-4 ">
+      <div className="md:min-w-max">
         <h1 className=" py-4 text-4xl font-bold">{props.title}</h1>
 
         <time dateTime={props.publishedAt} className="my-2 py-2 block">
@@ -24,16 +24,16 @@ const BlogId: NextPage<Props> = (props) => {
         </time>
         {props.tocvisible && <TableOfContents toc={toc} />}
         <hr className="my-10 mr-20" />
-        <div className=" flex">
+        <div className=" lg:flex">
           <article
-            className="prose prose-headings:container m-4 p-2 prose-headings:bg-gray-100 prose-headings:rounded-lg  prose-headings:p-4 prose-img:w-96 prose-img:h-96 prose-img:mt-0    prose-img:rounded-xl"
+            className="prose prose-headings:container m-4 p-2 prose-headings:bg-gray-100 prose-headings:rounded-lg  prose-headings:p-4 prose-img:w-96 prose-img:h-96 prose-img:mt-0    prose-img:rounded-xl "
             dangerouslySetInnerHTML={{ __html: props.body }}
           />
-          <div className="ml-10 pl-5">
-            <div className="m-5 mt-4 ml-12 p-2 flex  w-80 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+          <div className=" lg:ml-10 lg:pl-5">
+            <div className="m-5 mt-4 sm:ml-12 p-2 flex  w-80 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
               <ProfileJP />
             </div>
-            <div className="m-5 mt-4 ml-12 p-2 flex  w-80 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+            <div className="m-5 mt-4 sm:ml-12 p-2 flex  w-80 h-96  md:flex-row items-top border rounded-lg overflow-hidden">
               <ProfileYama />
             </div>
           </div>
