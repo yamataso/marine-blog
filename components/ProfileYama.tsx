@@ -3,7 +3,7 @@ import React from "react";
 export const ProfileYama = () => {
   return (
     <div className="">
-      <h1 className="font-semibold pb-4">プロフィール</h1>
+      <h1 className="pb-4 font-semibold">プロフィール</h1>
       <img
         className="ml-2 rounded-full"
         src="/Me.png"
@@ -11,7 +11,7 @@ export const ProfileYama = () => {
         width={100}
         height={100}
       />
-      <div className="m-1 ">
+      <div className="m-1">
         <p className="font-extrabold">Yama</p>
         <p className="m-3 pt-2">
           【独学プログラマー】

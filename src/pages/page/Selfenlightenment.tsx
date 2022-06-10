@@ -45,34 +45,34 @@ const Selfenlightenment: NextPage<Props> = (props) => {
         width={1024}
         height={980}
       />
-      <p className=" text-gray-400 pl-4 lg:px-44 lg:mt-16 ">{`${
+      <p className=" pl-4 text-gray-400 lg:mt-16 lg:px-44 ">{`${
         search ? "検索結果" : "記事の総数"
       }${totalCount}件`}</p>
-      <div className="lg:flex  m-auto">
+      <div className="m-auto  lg:flex">
         <ul className="sm:mt-4 sm:space-y-4">
           {contents.map((content) => {
             return (
-              <li key={content.id} className="sm:min-w-max  lg:pl-24 list-none">
+              <li key={content.id} className="list-none  sm:min-w-max lg:pl-24">
                 <Link href={`/blog/${content.id}`}>
-                  <div className="flex flex-col md:flex-row items-center border rounded-lg overflow-hidden m-4 p-3 md:max-w-3xl 2xl:max-w-full ">
+                  <div className="m-4 flex flex-col items-center overflow-hidden rounded-lg border p-3 md:max-w-3xl md:flex-row 2xl:max-w-full ">
                     <img
                       src="/profile.png"
                       loading="lazy"
                       alt="画像データ"
-                      className="w-72  h-36 rounded-lg object-cover object-center  inset-0 group-hover:scale-110 transition duration-200"
+                      className="inset-0  h-36 w-72 rounded-lg object-cover  object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="m-4 p-4">
                       <h2 className="text-xl">
                         <a
                           href="/"
-                          className=" underlinegroup  lg:w-auto lg:h-24 md:h-full block self-start shrink-0 text-indigo-500 hover:text-indigo-600 active:text-indigo-700overflow-hidden relative"
+                          className=" underlinegroup  active:text-indigo-700overflow-hidden relative block shrink-0 self-start text-indigo-500 hover:text-indigo-600 md:h-full lg:h-24 lg:w-auto"
                         >
                           {content.title}
                         </a>
                       </h2>
                     </div>
-                    <div className="sm:pt-20 pt-4 pl-4 text-right">
-                      <span className="text-gray-400 text-sm pr-3">
+                    <div className="pt-4 pl-4 text-right sm:pt-20">
+                      <span className="pr-3 text-sm text-gray-400">
                         2022/05/21
                       </span>
                     </div>
@@ -83,17 +83,17 @@ const Selfenlightenment: NextPage<Props> = (props) => {
           })}
         </ul>
         <div className="sm:mx-4">
-          <h1 className="sm:ml-8 sm:text-right text-base text-gray-400 font-medium">
+          <h1 className="text-base font-medium text-gray-400 sm:ml-8 sm:text-right">
             サイト内検索
           </h1>
-          <form className="sm:text-right space-x-4" onSubmit={hundleSubmit}>
+          <form className="space-x-4 sm:text-right" onSubmit={hundleSubmit}>
             <input
               type="text"
               name="query"
               placeholder="キーワード検索"
-              className="px-2 py-1 border-2 shadow-md  border-black rounded-lg "
+              className="rounded-lg border-2 border-black px-2  py-1 shadow-md "
             />
-            <button className="px-5 mt-3 border-2 border-black rounded-lg">
+            <button className="mt-3 rounded-lg border-2 border-black px-5">
               <img
                 src="/magnifying-glass.png"
                 alt="検索虫メガネ"
@@ -103,16 +103,16 @@ const Selfenlightenment: NextPage<Props> = (props) => {
             </button>
             <button
               type="reset"
-              className="px-1 my-2 border-2 border-black rounded-lg "
+              className="my-2 rounded-lg border-2 border-black px-1 "
               onClick={handleClick}
             >
               <img src="/reset.png" alt="リセット画像" width={24} height={24} />
             </button>
           </form>
-          <div className="m-8 xl:m-5 xl:ml-12  p-2 flex  xl:w-76 xl:h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+          <div className="xl:w-76 items-top m-8  flex overflow-hidden  rounded-lg border  p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
             <ProfileJP />
           </div>
-          <div className="m-8 xl:m-5 xl:ml-12  p-2 flex  xl:w-76 xl:h-96  md:flex-row items-top border rounded-lg overflow-hidden">
+          <div className="xl:w-76 items-top m-8  flex overflow-hidden  rounded-lg border  p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
             <ProfileYama />
           </div>
         </div>
