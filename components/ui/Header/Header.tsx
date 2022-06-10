@@ -31,7 +31,7 @@ export const Header = () => {
           </ul>
           <ul className="m-1">
             <li className="text-sm  px-2">
-              <Link href="/page/genre1">
+              <Link href="/page/Health">
                 <a
                   href="/"
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs ml-2 "
@@ -48,7 +48,7 @@ export const Header = () => {
           </ul>
           <ul className="m-1">
             <li className="text-sm px-2">
-              <Link href="/page/genre2">
+              <Link href="/page/Selfenlightenment">
                 <a
                   href="/"
                   className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"

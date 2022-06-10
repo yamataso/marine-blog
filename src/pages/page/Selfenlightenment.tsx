@@ -16,7 +16,7 @@ export type Blog = {
 
 type Props = MicroCMSListResponse<Blog>;
 
-const Genre1: NextPage<Props> = (props) => {
+const Selfenlightenment: NextPage<Props> = (props) => {
   const [search, setSeach] = useState<MicroCMSListResponse<Blog>>();
   const hundleSubmit: ComponentProps<"form">["onSubmit"] = async (event) => {
     event.preventDefault();
@@ -37,7 +37,7 @@ const Genre1: NextPage<Props> = (props) => {
   const totalCount = search ? search.totalCount : props.totalCount;
   return (
     <div className="my-8">
-      <h1>プログラムページ</h1>
+      <h1>自己啓発ページ</h1>
       <img
         className="m-auto rounded-lg lg:inset-full"
         src="/220_M.jpg"
@@ -128,4 +128,4 @@ export const getStaticProps: GetStaticProps<Props> = async () => {
     props: data,
   };
 };
-export default Genre1;
+export default Selfenlightenment;
