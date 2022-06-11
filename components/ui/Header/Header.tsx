@@ -53,8 +53,8 @@ export const Header = () => {
                   href="/"
                   className="text-xs font-semibold text-gray-100 transition duration-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg"
                 >
-                  本
-                  <img src="book.png" alt="" className="m-1 ml-3 py-2 pl-3" />
+                  書籍
+                  <img src="book.png" alt="" className="m-1 py-2 pl-3" />
                 </a>
               </Link>
             </li>

@@ -54,18 +54,18 @@ const Home: NextPage<Props> = (props) => {
         search ? "検索結果" : "記事の総数"
       }${totalCount}件`}</p>
 
-      <div className="m-auto  lg:flex">
+      <div className="m-auto lg:flex">
         <ul className="sm:mt-4 sm:space-y-4 ">
           {contents.map((content) => {
             return (
               <li key={content.id} className="sm:min-w-max  lg:pl-24">
                 <Link href={`/blog/${content.id}`}>
-                  <div className="flex flex-col items-center overflow-hidden rounded-lg border md:max-w-3xl md:flex-row lg:m-4 lg:p-3 2xl:max-w-full ">
+                  <div className="m-4 flex flex-col items-center overflow-hidden rounded-lg border md:max-w-3xl md:flex-row lg:m-4 lg:p-3 2xl:max-w-full ">
                     <img
                       src="/profile.png"
                       loading="lazy"
                       alt="画像データ"
-                      className="inset-0  h-36 w-72 rounded-lg object-cover  object-center transition duration-200 group-hover:scale-110"
+                      className="inset-0 m-4 h-36 w-72 rounded-lg object-cover  object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="m-4 p-4">
                       <h2 className="text-xl">
@@ -97,7 +97,7 @@ const Home: NextPage<Props> = (props) => {
               type="text"
               name="query"
               placeholder="キーワード検索"
-              className="rounded-lg border-2 border-black px-2  py-1 shadow-md "
+              className="rounded-lg border-2 border-black px-2 py-1 shadow-md "
             />
             <button className="mt-3 rounded-lg border-2 border-black px-5">
               <img
@@ -115,10 +115,10 @@ const Home: NextPage<Props> = (props) => {
               <img src="/reset.png" alt="リセット画像" width={24} height={24} />
             </button>
           </form>
-          <div className="xl:w-76 items-top m-8  flex overflow-hidden  rounded-lg border  p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
+          <div className="xl:w-76 items-top m-8 flex overflow-hidden rounded-lg border p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
             <ProfileJP />
           </div>
-          <div className="xl:w-76 items-top m-8  flex overflow-hidden  rounded-lg border  p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
+          <div className="xl:w-76 items-top m-8 flex overflow-hidden rounded-lg border p-2 md:flex-row xl:m-5 xl:ml-12 xl:h-96">
             <ProfileYama />
           </div>
         </div>
