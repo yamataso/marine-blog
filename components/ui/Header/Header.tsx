@@ -3,68 +3,68 @@ import Link from "next/link";
 export const Header = () => {
   return (
     <div>
-      <header className="sm:flex  bg-gray-900 pointer-events-auto tracking-widest justify-between items-center py-4">
+      <header className="pointer-events-auto  items-center justify-between bg-gray-900 py-4 tracking-widest sm:flex">
         <a
           href="/"
-          className="  text-gray-100 px-2 inline-flex items-center text-black-800 text-2xl md:text-3xl font-bold gap-1.5"
+          className="  text-black-800 inline-flex items-center gap-1.5 px-2 text-2xl font-bold text-gray-100 md:text-3xl"
           aria-label="logo"
         >
-          <h1 className=" lg:px-16 px-4 mb-4">Marine Blog</h1>
+          <h1 className=" mb-4 px-4 lg:px-16">Marine Blog</h1>
         </a>
-        <nav className="flex lg:gap-12 lg:px-16 mx-2">
+        <nav className="mx-2 flex lg:gap-12 lg:px-16">
           <ul className="m-1">
             <li className="text-sm ">
               <Link href="/page/Program">
                 <a
                   href="/"
-                  className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
+                  className="text-xs font-semibold text-gray-100 transition duration-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg"
                 >
                   プログラミング
                   <img
                     src="computer.png"
                     alt=""
-                    className="m-1 ml-8 pl-5  py-2"
+                    className="m-1 ml-8 py-2  pl-5"
                   />
                 </a>
               </Link>
             </li>
           </ul>
           <ul className="m-1">
-            <li className="text-sm  px-2">
+            <li className="px-2  text-sm">
               <Link href="/page/Health">
                 <a
                   href="/"
-                  className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs ml-2 "
+                  className="ml-2 text-xs font-semibold text-gray-100 transition duration-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg "
                 >
                   健康
                   <img
                     src="hospital.png"
                     alt=""
-                    className="m-1 ml-3 pr-2   py-2"
+                    className="m-1 ml-3 py-2   pr-2"
                   />
                 </a>
               </Link>
             </li>
           </ul>
           <ul className="m-1">
-            <li className="text-sm px-2">
+            <li className="px-2 text-sm">
               <Link href="/page/Selfenlightenment">
                 <a
                   href="/"
-                  className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
+                  className="text-xs font-semibold text-gray-100 transition duration-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg"
                 >
-                  自己啓発
-                  <img src="book.png" alt="" className="m-1 ml-3 pl-3 py-2" />
+                  本
+                  <img src="book.png" alt="" className="m-1 ml-3 py-2 pl-3" />
                 </a>
               </Link>
             </li>
           </ul>
           <ul className="m-1">
-            <li className="text-sm px-2 ">
+            <li className="px-2 text-sm ">
               <Link href="/page/Form">
                 <a
                   href="/"
-                  className="text-gray-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg font-semibold transition duration-100 text-xs"
+                  className="text-xs font-semibold text-gray-100 transition duration-100 hover:text-indigo-500 active:text-indigo-700 lg:text-lg"
                 >
                   お問い合わせ
                   <img src="form.png" alt="" className="m-1 ml-10 py-2 " />
