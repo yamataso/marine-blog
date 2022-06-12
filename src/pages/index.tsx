@@ -79,7 +79,7 @@ const Home: NextPage<Props> = (props) => {
                     </div>
                     <div className="pt-4 pl-4 text-right sm:pt-20">
                       <span className="pr-3 text-sm text-gray-400">
-                        2022/05/21
+                        2022/06/12
                       </span>
                     </div>
                   </div>
