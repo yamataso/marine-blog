@@ -7,7 +7,7 @@ import { ComponentProps } from "react";
 import { useState } from "react";
 import { ProfileJP } from "../../components/ProfileJP";
 import { ProfileYama } from "../../components/ProfileYama";
-
+import dayjs from "dayjs";
 export type Blog = {
   title: string;
   body: string;
@@ -62,24 +62,24 @@ const Home: NextPage<Props> = (props) => {
                 <Link href={`/blog/${content.id}`}>
                   <div className="m-4 flex flex-col items-center overflow-hidden rounded-lg border md:max-w-3xl md:flex-row lg:m-4 lg:p-3 2xl:max-w-full ">
                     <img
-                      src="/profile.png"
+                      src="/programming.png"
                       loading="lazy"
                       alt="画像データ"
-                      className="inset-0 m-4 h-36 w-72 rounded-lg object-cover  object-center transition duration-200 group-hover:scale-110"
+                      className="inset-0 m-4 h-40 w-40 rounded-lg object-cover  object-center transition duration-200 group-hover:scale-110"
                     />
                     <div className="m-4 p-4">
                       <h2 className="text-xl">
                         <a
                           href="/"
-                          className="underlinegroup active:text-indigo-700overflow-hidden relative block shrink-0 self-start text-indigo-500 hover:text-indigo-600 md:h-full lg:h-24 lg:w-auto"
+                          className="underlinegroup active:text-indigo-700overflow-hidden relative block max-w-xs shrink-0 self-start text-indigo-500 hover:text-indigo-600 md:h-full lg:h-24 lg:w-auto"
                         >
                           {content.title}
                         </a>
                       </h2>
                     </div>
-                    <div className="pt-4 pl-4 text-right sm:pt-20">
-                      <span className="pr-3 text-sm text-gray-400">
-                        2022/06/12
+                    <div className="m-4 pt-4  text-right sm:pt-20">
+                      <span className="m-2 text-sm text-gray-400">
+                        {dayjs(content.createdAt).format("YYYY年MM月DD日")}
                       </span>
                     </div>
                   </div>
