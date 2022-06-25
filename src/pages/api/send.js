@@ -9,7 +9,7 @@ export default function handler(req, res) {
       bcc: "yamataso0876@gmail.com",
       from: "yamataso0876@gmail.com",
       subject: "お問合せありがとうございました。",
-      text: `${req.body.name} 様\nお問合せを受け付けました。回答をお待ちください。\n\n【件名】${req.body.subject}\n${req.body.message}`,
+      text: `${req.body.name} 様\nお問合せを受け付けました。回答をお待ちください。\n${req.body.message}`,
     };
 
     (async () => {
