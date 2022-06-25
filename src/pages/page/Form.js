@@ -1,15 +1,17 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import Router from "next/router";
+
 const Form = () => {
   const {
     register,
     handleSubmit,
     formState: { errors },
   } = useForm();
+
   const onSubmit = async (data, event) => {
     console.log(data);
-    event.preventDefault();
+
     const res = await fetch("/api/send", {
       body: JSON.stringify({
         name: event.target.name.value,

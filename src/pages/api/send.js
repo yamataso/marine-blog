@@ -3,11 +3,11 @@ export default function handler(req, res) {
 
   if (req.method === "POST") {
     const sgMail = require("@sendgrid/mail");
-    sgMail.setApiKey(process.env.SENDGRID_APIKEY);
+    sgMail.setApiKey(process.env.SENDGRID_API_KEY);
     const msg = {
-      to: "yamataso0876@gmail.com",
-      bcc: "marine-blog.vercel.app/page/Form",
-      from: "marine-blog.vercel.app/page/Form",
+      to: req.body.email,
+      bcc: "yamataso0876@gmail.com",
+      from: "yamataso0876@gmail.com",
       subject: "お問合せありがとうございました。",
       text: `${req.body.name} 様\nお問合せを受け付けました。回答をお待ちください。\n\n【件名】${req.body.subject}\n${req.body.message}`,
     };
