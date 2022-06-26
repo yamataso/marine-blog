@@ -6,7 +6,7 @@ export const ProfileYama = () => {
       <h1 className="pb-4 font-semibold">プロフィール</h1>
       <img
         className="ml-2 rounded-full"
-        src="/Me.png"
+        src="/me.png"
         alt="プロフィール画像JP"
         width={100}
         height={100}
